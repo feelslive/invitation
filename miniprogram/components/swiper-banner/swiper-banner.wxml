@@ -1,0 +1,12 @@
+ <!-- 图片轮播 -->
+ <view class="swiper-body">
+     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#fff"
+         interval="{{interval}}" previous-margin="30rpx" next-margin="30rpx" duration="{{duration}}" circular="true">
+         <block wx:for="{{banner}}" wx:key="{{index}}">
+             <swiper-item>
+                 <image src="{{item}}" bindtap="previewImage" data-item="{{item}}" mode="aspectFit" lazy-load="true" class="slide-image" binderror="imageError"
+                     data-img="banner[{{index}}]" />
+             </swiper-item>
+         </block>
+     </swiper>
+ </view>

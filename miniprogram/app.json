@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/benediction/benediction",
+    "pages/fullpage/fullpage",
+    "pages/message/message"
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ef8783",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "../miniprogram/images/1.png",
+        "selectedIconPath": "../miniprogram/images/2.png",
+        "text": "請柬"
+      },
+      {
+        "pagePath": "pages/benediction/benediction",
+        "iconPath": "../miniprogram/images/3.png",
+        "selectedIconPath": "../miniprogram/images/4.png",
+        "text": "祝福爱心"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "../miniprogram/images/1.png",
+        "selectedIconPath": "../miniprogram/images/2.png",
+        "text": "祝福留言"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,21 @@
+<view class="">
+    <image class="thanks-icon" src="../../images/thanks.gif" />
+    <view class="ben-count" wx:if="{{queryAllResult.length >= 1}}">已收到{{queryAllResult.length}}位好友的爱心祝福</view>
+    <view class="avatar">
+        <image class="userinfo-avatar" lazy-load="{{true}}" wx:for="{{queryAllResult}}" wx:key="{{index}}" src="{{item.avatarUrl?item.avatarUrl:'../../images/like.png'}}" />
+    </view>
+</view>
+<view class="bend-btn" wx:if="{{false}}" bind:touchstart="{{isLike ? '':'onAdd'}}">
+    <image class="like-icon" src="{{isLike?'../../images/like.png':'../../images/like-n.png'}}" />
+    <view class="like-text" style="{{isLike?'color:#ef8783':'color:#bfbfbf'}}">{{isLike?'O(∩_∩)O':'送上祝福'}}</view>
+</view>
+
+<view class="v-body">
+    <view class="v-canvas">
+        <canvas canvas-id="canvas_wi" style="{{canvas_style}}" class="myCanvas"/>
+    </view>
+    <view class="v-img" bind:touchstart="{{isLike? 'twice':'onAdd'}}">
+        <image src="../../images/heart_button.png" class="bt-img" bindtap="onClickImage" style="{{style_img}}"></image>
+        <!-- <view class="like-text" style="{{isLike?'color:#ef8783':'color:#bfbfbf'}}">{{isLike?'O(∩_∩)O':'送上祝福'}}</view> -->
+    </view>
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "swiper-banner": "../../components/swiper-banner/swiper-banner"
+  }
+}

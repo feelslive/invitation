@@ -1,0 +1,21 @@
+/* 轮播图 S */
+.swiper-body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-body swiper {
+    height: 400rpx;
+}
+.swiper-body swiper-item {
+    box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+    background: #ccc;
+}
+.swiper-body swiper-item image {
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+/* 轮播图 E */

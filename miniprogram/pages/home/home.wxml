@@ -1,0 +1,91 @@
+<!-- <view bindtap="lookMap">
+    💒婚礼地址
+</view> -->
+<view class='music {{on? "on": ""}}'>
+    <image src='../../images/music.png' style='width: 60rpx;height: 60rpx;' bindtap='stop'></image>
+</view>
+<view class="container container-fill">
+    <view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove"
+        bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
+        <view class="section section01 {{scrollindex==0?'active':''}}" style="background: #FFF;">
+            <!-- <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/3.jpg" mode="aspectFit" /> -->
+            <view class="section-maintitle position-val-1 puffIn one-content">
+                <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/3.jpg" mode="widthFix" />
+                <view class="one-border">
+                    <!-- <view class="one-text">吾至爱汝，唯愿执子之手，与子偕老</view> -->
+                   
+                </view>
+            </view>
+        </view>
+        <view class="section section02 {{scrollindex==1?'active':''}}" style="background: #FFF;">
+            <view class="section-maintitle position-val-2 swap two-content">
+                <image src="cloud://dev-1127.6465-dev-1127/an/4.jpg" mode="widthFix" />
+                <view class="two-border">
+                    <!-- <view class="two-text">吾至爱汝，唯愿执子之手，与子偕老</view> -->
+                </view>
+            </view>
+        </view>
+        <view class="section section03 {{scrollindex==2?'active':''}}" style="background: #FFF;">
+            
+            <view class="section-maintitle position-val-3 spaceInRight three-content">
+                <image src="cloud://dev-1127.6465-dev-1127/an/5.jpg" mode="widthFix" />
+                 <view class="three-border">
+                    <!-- <view class="three-text">吾至爱汝，唯愿执子之手，与子偕老</view> -->
+                </view>
+            </view>
+        </view>
+        <view class="section section04 {{scrollindex==3?'active':''}}" style="background: #FFF;">
+            
+            <view class="section-maintitle position-val-4 twisterInDown four-content">
+                <image src="cloud://dev-1127.6465-dev-1127/an/6.jpg" mode="widthFix" />
+                 <view class="four-border">
+                    <view class="four-text">吾至爱汝，唯愿执子之手，与子偕老</view>
+                </view>
+            </view>
+        </view>
+        <view class="section section05 {{scrollindex==4?'active':''}}" style="background: #FFF;">
+            
+            <view class="section-maintitle position-val-5 spaceInUp five-content">
+                <image src="cloud://dev-1127.6465-dev-1127/an/2.jpg" mode="widthFix" />
+                 <view class="five-border">
+                    <view class="five-text">吾至爱汝，唯愿执子之手，与子偕老</view>
+                </view>
+            </view>
+        </view>
+        <view class="section section06 {{scrollindex==5?'active':''}}" style="background: #FFF;">
+            <view class="section-maintitle position-val-6 tinDownIn six-content">
+                <image src="cloud://dev-1127.6465-dev-1127/an/7.jpg" style="width:690rpx;" mode="widthFix" />
+                <view class="six-border">
+                    <view class="me-name"> Mr.王 & Miss.安</view>
+                    <view class="me-text">谨定于</view>
+                    <view class="me-date">
+                        <view class="">
+                            <view class="">公历 2019年09月19日</view>
+                            <view class="">农历 2019年08月21日</view>
+                        </view>
+                        <view class=""> 周四</view>
+                    </view>
+                    <view class="me-time">
+                        时间：上午九时十九分
+                    </view>
+                    <view class="me-site" bind:touchstart="lookMap">
+                        <view class="">席设：保定市唐县仁厚镇黄家庄村</view>
+                        <image src="../../images/site.png" />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="" wx:if="{{isAuth}}">
+    <view class="mask">
+        <!-- 用户 openid -->
+        <!-- <image class="mask-bg" src="../../images/fm.jpeg" /> -->
+        <view class="open">
+            <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+                <image class="open-icon" src="../../images/timg.gif" />
+                <view>台启</view>
+            </button>
+        </view>
+    </view>
+</view>

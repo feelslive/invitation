@@ -1,0 +1,95 @@
+page{
+    /* background: rgba(230, 125, 125, 0.4) */
+}
+.thanks-icon {
+    display: block;
+    margin: 0 auto;
+    width: 500rpx;
+    height: 320rpx;
+}
+.ben-count {
+    text-align: center;
+    margin: 40rpx 0;
+    color: #ef8783;
+    font-size: 32rpx;
+}
+
+.avatar {
+    width: 628rpx;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.userinfo-avatar {
+    width: 80rpx;
+    height: 80rpx;
+    margin: 8rpx;
+    border-radius: 50%;
+    border: 1px solid #ef8783;
+    background-size: cover;
+    background-color: white;
+}
+
+.userinfo-avatar:after {
+    border: none;
+}
+
+/* ----------------- */
+.bend-btn {
+    position: fixed;
+    bottom: 30rpx;
+    right: 30rpx;
+}
+.like-icon {
+    width: 100rpx;
+    height: 100rpx;
+}
+.like-text {
+    font-size: 24rpx;
+}
+
+
+
+/* ------------- */
+/* pages/waveimage/waveimage.wxss */
+.v-body{
+    display: flex;
+    position: relative;
+    
+}
+
+.myCanvas{
+  background-color: transparent;
+  width: 90px;
+  height:400px;
+}
+
+.v-canvas{
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    width: 90px;
+    background-color: transparent;
+}
+
+.v-img{
+  position: fixed;
+  right: 45px;
+  bottom: 30px;
+}
+
+.bt-img{
+  width: 40px;
+  height: 40px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition:ease all;
+  -moz-transition:ease all;
+  transition:ease all;
+  -webkit-transition-duration:700ms;
+  -moz-transition-duration:700ms;
+  transition-duration:700ms;
+}
+

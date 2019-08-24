@@ -1,0 +1,17 @@
+<view class="message-list">
+    <view class="ben-count" wx:if="{{allMsg.length >= 1}}">已收到{{allMsg.length}}条好友的祝福语</view>
+    <view class="msg-item" wx:for="{{allMsg}}" wx:key="{{index}}">
+        <view class="user-photo">
+            <image class="userinfo-avatar " src="{{item.avatarUrl}}" />
+        </view>
+        <view class="user-info">
+            <view class="user-name">{{item.nickName}}</view>
+            <view class="user-msg">{{item.msg}}</view>
+            <view class="user-time">{{item.date}}</view>
+        </view>
+    </view>
+</view>
+<view class="message-input">
+  <input class="input-box" bindinput="getMsg" value="{{msg}}" bindblur="getMsg" cursor-spacing="10" placeholder-style="color:#ef8783" placeholder="写下你的祝福语❤" />
+  <view class="msg-btn" bind:tap="onAdd">送上祝福</view>
+</view>
