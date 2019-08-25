@@ -69,7 +69,7 @@ Page({
                 }
             }
         });
-        this.onQueryAllUser()
+        this.getAll()
         this.onQueryUser()
     },
     sortKey(array, key) {
@@ -78,6 +78,31 @@ Page({
           var y = b[key];
           return x > y ? -1 : x < y ? 1 : 0;
         });
+    },
+    getAll(){
+        // 调用云函数
+        wx.cloud.callFunction({
+            name: 'queryUser',
+            data: {},
+            success: res => {
+                console.log('[云函数]', res.result.data)
+                if (res.result.data.length !== 0) {
+                    let list = this.sortKey(res.result.data, "date")
+                    this.setData({
+                        queryAllResult: list,
+                    })
+                } else {
+                    this.setData({
+                        queryAllResult: [],
+                    })
+                }
+            },
+            fail: err => {
+                this.setData({
+                    queryAllResult: [],
+                })
+            }
+        })
     },
     onQueryAllUser: function () {
         const db = wx.cloud.database()
@@ -161,7 +186,7 @@ Page({
                         }
                     }
                 })
-                that.onQueryAllUser()
+                that.getAll()
                 console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
             },
             fail: err => {
@@ -369,20 +394,6 @@ Page({
 
     },
     /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
      * 生命周期函数--监听页面卸载
      */
     onUnload: function () {
@@ -390,26 +401,5 @@ Page({
             // cancelAnimationFrame(timer);
             abortAnimationFrame(timer);
         }
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
     }
 })

@@ -2,7 +2,7 @@ const app = getApp()
 Page({
     data: {
         scrollindex: 0, //当前页面的索引值
-        totalnum: 6, //总共页面数
+        totalnum: 4, //总共页面数
         starty: 0, //开始的位置x
         endy: 0, //结束的位置y
         critical: 100, //触发翻页的临界值
@@ -154,4 +154,41 @@ Page({
             address: "保定市唐县仁厚镇黄家庄村"
         });
     },
+    //查看地图
+    lookMap2(e) {
+        // 查看地图
+        wx.openLocation({
+            latitude: Number(39.950970),
+            longitude: Number(116.415920),
+            scale: 18,
+            name: "席设地点",
+            address: "东城区和平里西街77号金鼎轩(地坛店)"
+        });
+    },
+    callMan(){
+        wx.makePhoneCall({
+            phoneNumber: "15711177508",
+            success: res => {
+                //电话号码
+            }
+        });
+    },
+    callWoMan(){
+        wx.makePhoneCall({
+            phoneNumber: "15010059224",
+            success: res => {
+                //电话号码
+            }
+        });
+    },
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage: function () {
+        return {
+            title: '王付康&安灿灿的婚礼诚挚邀请',
+            path: '/pages/home/home',
+            imageUrl:"../../images/7.jpg"
+          }
+    }
 })

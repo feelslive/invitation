@@ -1,5 +1,6 @@
 page{
-    background: rgba(230, 125, 125, 0.4)
+    background: rgba(230, 125, 125, 0.4);
+    padding-bottom:200rpx;
 }
 .ben-count {
     text-align: center;

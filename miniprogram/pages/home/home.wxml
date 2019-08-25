@@ -8,54 +8,69 @@
     <view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove"
         bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
         <view class="section section01 {{scrollindex==0?'active':''}}" style="background: #FFF;">
-            <!-- <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/3.jpg" mode="aspectFit" /> -->
-            <view class="section-maintitle position-val-1 puffIn one-content">
-                <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/3.jpg" mode="widthFix" />
-                <view class="one-border">
-                    <!-- <view class="one-text">吾至爱汝，唯愿执子之手，与子偕老</view> -->
-                   
-                </view>
+            <image class="two-bg-img" src="cloud://dev-1127.6465-dev-1127/an/WechatIMG76.png" mode="widthFix" />
+            <view class="section-maintitle position-val-2 swap two-content">
+                <view class="home-text" style="margin-left:-100rpx;">吾至爱汝，</view>
+                <view class="home-text" style="margin-left:100rpx;">唯愿执子之手，</view>
+                <view class="home-text" style="margin-left:200rpx;">与子偕老</view>
+                <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/WechatIMG77.png" mode="widthFix" />
+                <!-- <view class="two-border"> 	
+                    <view class="two-text">吾至爱汝，唯愿执子之手，与子偕老</view>
+                </view> -->
             </view>
         </view>
         <view class="section section02 {{scrollindex==1?'active':''}}" style="background: #FFF;">
-            <view class="section-maintitle position-val-2 swap two-content">
-                <image src="cloud://dev-1127.6465-dev-1127/an/4.jpg" mode="widthFix" />
-                <view class="two-border">
-                    <!-- <view class="two-text">吾至爱汝，唯愿执子之手，与子偕老</view> -->
-                </view>
-            </view>
-        </view>
-        <view class="section section03 {{scrollindex==2?'active':''}}" style="background: #FFF;">
-            
-            <view class="section-maintitle position-val-3 spaceInRight three-content">
-                <image src="cloud://dev-1127.6465-dev-1127/an/5.jpg" mode="widthFix" />
-                 <view class="three-border">
-                    <!-- <view class="three-text">吾至爱汝，唯愿执子之手，与子偕老</view> -->
-                </view>
-            </view>
-        </view>
-        <view class="section section04 {{scrollindex==3?'active':''}}" style="background: #FFF;">
-            
+            <image class="top-img spaceInUp" src="cloud://dev-1127.6465-dev-1127-1300066957/border/3-min.png"
+                mode="widthFix" />
             <view class="section-maintitle position-val-4 twisterInDown four-content">
-                <image src="cloud://dev-1127.6465-dev-1127/an/6.jpg" mode="widthFix" />
-                 <view class="four-border">
+                <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/WechatIMG78.png" mode="widthFix" />
+                <!-- <view class="four-border">
                     <view class="four-text">吾至爱汝，唯愿执子之手，与子偕老</view>
-                </view>
+                </view> -->
             </view>
+            <image class="foot-img spaceInDown" src="cloud://dev-1127.6465-dev-1127-1300066957/border/4-min.png"
+                mode="widthFix" />
         </view>
-        <view class="section section05 {{scrollindex==4?'active':''}}" style="background: #FFF;">
-            
+        <!-- <view class="section section03 {{scrollindex==2?'active':''}}" style="background: #FFF;"> -->
+            <!-- <view class="section-maintitle position-val-3 spaceInRight three-content"> -->
+                <!-- <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/5.jpg" mode="widthFix" /> -->
+                <!-- <view class="three-border">
+                    <view class="three-text">吾至爱汝，唯愿执子之手，与子偕老</view>
+                </view> -->
+            <!-- </view> -->
+            <!-- <image class="foot-img spaceInDown" src="cloud://dev-1127.6465-dev-1127-1300066957/border/2-min.png" mode="widthFix" /> -->
+        <!-- </view> -->
+        <view class="section section04 {{scrollindex==2?'active':''}}" style="background: #FFF;">
+            <!-- <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/3.jpg" mode="aspectFit" /> -->
+            <image class="top-img spaceInUp" src="cloud://dev-1127.6465-dev-1127-1300066957/border/1-min.png"
+                mode="widthFix" />
+            <view class="section-maintitle position-val-1 puffIn one-content">
+                <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/WechatIMG75.png" mode="widthFix" />
+                <view class="one-border">
+                    <view class="one-text" style="margin-left:-100rpx">有生之年，欣喜相逢</view>
+                    <view class="one-text" style="margin-left:100rpx">余生有你，满心欢喜</view>
+                    <!-- <view class="one-text">吾至爱汝，唯愿执子之手，与子偕老</view> -->
+                </view>
+
+            </view>
+            <image class="foot-img spaceInDown" src="cloud://dev-1127.6465-dev-1127-1300066957/border/2-min.png"
+                mode="widthFix" />
+        </view>
+        <!-- <view class="section section05 {{scrollindex==3?'active':''}}" style="background: #FFF;">
             <view class="section-maintitle position-val-5 spaceInUp five-content">
-                <image src="cloud://dev-1127.6465-dev-1127/an/2.jpg" mode="widthFix" />
-                 <view class="five-border">
+                <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/2.jpg" mode="widthFix" />
+                <view class="five-border">
                     <view class="five-text">吾至爱汝，唯愿执子之手，与子偕老</view>
                 </view>
             </view>
-        </view>
-        <view class="section section06 {{scrollindex==5?'active':''}}" style="background: #FFF;">
-            <view class="section-maintitle position-val-6 tinDownIn six-content">
-                <image src="cloud://dev-1127.6465-dev-1127/an/7.jpg" style="width:690rpx;" mode="widthFix" />
-                <view class="six-border">
+            <image class="foot-img spaceInDown" src="cloud://dev-1127.6465-dev-1127-1300066957/border/2-min.png"
+                mode="widthFix" />
+        </view> -->
+        <view class="section section06 {{scrollindex==3?'active':''}}" style="background: #FFF;">
+            <image class="item-img" src="cloud://dev-1127.6465-dev-1127/an/1.jpg" style="width:750rpx;"
+                mode="widthFix" />
+            <view class="section-maintitle position-val-6 six-content">
+                <view class="six-border tinDownIn">
                     <view class="me-name"> Mr.王 & Miss.安</view>
                     <view class="me-text">谨定于</view>
                     <view class="me-date">
@@ -63,7 +78,7 @@
                             <view class="">公历 2019年09月19日</view>
                             <view class="">农历 2019年08月21日</view>
                         </view>
-                        <view class=""> 周四</view>
+                        <view class="">（周四）</view>
                     </view>
                     <view class="me-time">
                         时间：上午九时十九分
@@ -73,19 +88,56 @@
                         <image src="../../images/site.png" />
                     </view>
                 </view>
+                <view class="six-border tinDownIn2">
+                    <view class="me-name"> 北京席设</view>
+                    <view class="me-date">
+                        <view class="">
+                            <view class="">公历 2019年09月28日</view>
+                        </view>
+                        <view class="">（周六）</view>
+                    </view>
+                    <view class="me-time">
+                        时间：下午17:30分
+                    </view>
+                    <view class="me-text">地址：东城区和平里西街77号</view>
+                    <view class="me-site" style="margin-top:20rpx" bind:touchstart="lookMap2">
+                        <view class="">金鼎轩(地坛店)</view>
+                        <image src="../../images/site.png" />
+                    </view>
+                </view>
+                <view class="call-me">
+                    <view class="six-border tinDownIn3" bind:tap="callMan">
+                        <view class="me-name">联系新郎</view>
+                    </view>
+                    <view class="six-border tinDownIn3" bind:tap="callWoMan">
+                        <view class="me-name">联系新娘</view>
+                    </view>
+                </view>
             </view>
+            <image class="foot-img spaceInDown" style="z-index:1" src="cloud://dev-1127.6465-dev-1127-1300066957/border/4-min.png"
+                mode="widthFix" />
         </view>
     </view>
 </view>
 <view class="" wx:if="{{isAuth}}">
     <view class="mask">
         <!-- 用户 openid -->
-        <!-- <image class="mask-bg" src="../../images/fm.jpeg" /> -->
+        <image class="mask-bg" src="cloud://dev-1127.6465-dev-1127/an/WechatIMG74.png" mode="widthFix" />
+        <!-- <view class="mask-img">
+            <image class="" src="../../images/7.jpg" mode="widthFix"/>
+        </view> -->
+        <view class="mask-name">
+            王付康 & 安灿灿
+        </view>
+        <view class="mask-en">Welcome to our wedding</view>
         <view class="open">
             <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
                 <image class="open-icon" src="../../images/timg.gif" />
                 <view>台启</view>
             </button>
+        </view>
+        <view class="">
+            <image class="mask-foot" src="cloud://dev-1127.6465-dev-1127-1300066957/border/6-min.png" mode="widthFix" />
         </view>
     </view>
 </view>
